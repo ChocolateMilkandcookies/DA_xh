@@ -2,7 +2,7 @@
 import scrapy
 class newspider(scrapy.Spider):
     name= "new spider"
-    start_urls= ["http://172.17.50.43/spicyx"]
+    start_urls= ["http://172.17.50.43/spicyx"] #display
     def parse(self, response):
         css_sel = "img"
         for x in response.css(css_sel):
